@@ -29,7 +29,7 @@ class Task
   end
 
   def persisted?
-    !@id.nil?
+    !@id.nil? # You probably want to include a better check here. Is the id in the DB?
   end
 
   def save
